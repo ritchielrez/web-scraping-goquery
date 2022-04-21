@@ -31,6 +31,8 @@ func main() {
 	// 	fmt.Println(title)
 	// 	return false
 	// })
-  fmt.Println(strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")[0])
+
+  version := strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")[0]
+  fmt.Println(version)
 
 }
