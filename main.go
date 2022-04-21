@@ -41,5 +41,4 @@ func main() {
 	// The quick css selector trick to scrape content
 	version := strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")[0]
 	fmt.Println(version)
-
 }
