@@ -26,9 +26,11 @@ func main() {
 		log.Fatalf("Error: %v\n", err)
 	}
 
-	doc.Find(".col-md-9").EachWithBreak(func(i int, s *goquery.Selection) bool {
-		title := strings.Split(s.Find("code").Text(), "\n")[0]
-		fmt.Println(title)
-		return false
-	})
+	// doc.Find(".col-md-9").EachWithBreak(func(i int, s *goquery.Selection) bool {
+	// 	title := strings.Split(s.Find("code").Text(), "\n")[0]
+	// 	fmt.Println(title)
+	// 	return false
+	// })
+  fmt.Println(strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")[0])
+
 }
