@@ -39,6 +39,7 @@ func main() {
 	// })
 
 	// The quick css selector trick to scrape the version number
-	version := strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")[0]
+	colMd9 := strings.Split(doc.Find("div.col-md-9 code").Text(), "\n")
+	version := colMd9[0]
 	fmt.Println(version)
 }
