@@ -34,7 +34,7 @@ func main() {
 	// The verbose method
 	// doc.Find(".col-md-9").EachWithBreak(func(i int, s *goquery.Selection) bool {
 	// 	version := strings.Split(s.Find("code").Text(), "\n")[0]
-	// 	fmt.Println(title)
+	// 	fmt.Println(version)
 	// 	return false
 	// })
 
