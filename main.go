@@ -17,7 +17,7 @@ func main() {
 	}
 
 	// `defer` is really important here to use
-	// so it only closes the response, if
+	// so it only stop sending the response, if
 	// only there isn't any response
 
 	defer res.Body.Close()
